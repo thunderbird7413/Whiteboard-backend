@@ -20,8 +20,13 @@ const MONGODB_URI = process.env.MONGODB_URI;
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
+})
+.then(() => console.log("mongoose connected"))
+.catch(err => {
+    console.error("Mongoose connection error:", err);
+    process.exit(1); // Optionally exit if DB connection fails
 });
-console.log("mongoose connected");
+
 
 const Room = require('./models/Room');
 
@@ -116,5 +121,5 @@ io.on('connection', (socket) => {
 
 const PORT = process.env.PORT;
 server.listen(PORT || 4000, () => {
-    console.log('Server running on port 4000');
+    console.log(`Server running on port ${PORT}`);
 });
