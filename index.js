@@ -17,10 +17,7 @@ const io = new Server(server, {
 });
 
 const MONGODB_URI = process.env.MONGODB_URI;
-mongoose.connect(MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect(MONGODB_URI)
 .then(() => console.log("mongoose connected"))
 .catch(err => {
     console.error("Mongoose connection error:", err);
