@@ -32,7 +32,7 @@ A **real-time collaborative whiteboard application** that enables multiple users
 ## 🛠️ Tech Stack
 
 ### Frontend
-- **React.js** or **Next.js**
+- **Next.js**
 - **Fabric.js** for advanced canvas manipulation
 - **Tailwind Css**
 
