@@ -17,13 +17,15 @@ const io = new Server(server, {
 });
 
 const MONGODB_URI = process.env.MONGODB_URI;
-mongoose.connect(MONGODB_URI)
-.then(() => console.log("mongoose connected"))
-.catch(err => {
+(async () => {
+  try {
+    await mongoose.connect(MONGODB_URI);
+    console.log("mongoose connected successfully!");
+  } catch (err) {
     console.error("Mongoose connection error:", err);
-    process.exit(1); // Optionally exit if DB connection fails
-});
-
+    process.exit(1);
+  }
+})();
 
 const Room = require('./models/Room');
 
