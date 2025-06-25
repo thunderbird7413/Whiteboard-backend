@@ -2,7 +2,6 @@
 
 A **real-time collaborative whiteboard application** that enables multiple users to draw, write, and interact simultaneously—replicating the experience of a physical whiteboard directly in the browser. Built with modern web technologies, the app supports drawing tools, real-time sync, export options, access control, and more.
 
----
 
 ## 🚀 Features
 
@@ -27,7 +26,6 @@ A **real-time collaborative whiteboard application** that enables multiple users
 - **💬 (Future Enhancement)**  
   Add voice chat or a comment/chat sidebar for richer collaboration.
 
----
 
 ## 🛠️ Tech Stack
 
@@ -50,6 +48,5 @@ A **real-time collaborative whiteboard application** that enables multiple users
 
 ### Hosted URL -> https://collaborative-whiteboard-woad.vercel.app/
 
----
 
 
