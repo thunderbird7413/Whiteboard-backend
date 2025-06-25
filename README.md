@@ -48,6 +48,8 @@ A **real-time collaborative whiteboard application** that enables multiple users
 - **Backend**: Render
 - **Database**: MongoDB Atlas
 
+### Hosted URL -> https://collaborative-whiteboard-woad.vercel.app/
+
 ---
 
 
